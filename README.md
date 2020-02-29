@@ -5,5 +5,4 @@ CSC, Hack Passionately, Act Righteously!
 
 For more information, visit us at http://student-activity.binus.ac.id/csc
 
-#Cyber Class
-One of Cyber Security Community's program to teach students about cyber security materials
+Cyber Class is one of Cyber Security Community's program to teach students about cyber security materials
