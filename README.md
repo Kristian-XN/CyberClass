@@ -5,6 +5,6 @@ A community of BINUS University students passionate in making positive contribut
 
 **Hack Passionately, Act Righteously!**
 
-For more information, visit us at [here](http://student-activity.binus.ac.id/csc)
+For more information, visit us [here](http://student-activity.binus.ac.id/csc)
 
 Cyber Class is one of Cyber Security Community's program to teach students about cyber security materials.
