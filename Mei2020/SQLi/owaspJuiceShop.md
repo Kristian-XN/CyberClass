@@ -1,6 +1,6 @@
-#OWASP Juice Shop (tryhackme)
+# OWASP Juice Shop (tryhackme)
 
-##nmap initial scan
+## nmap initial scan
 ```
 # Nmap 7.60 scan initiated Mon May 25 13:21:02 2020 as: nmap -sC -sV -p- --script=default,vuln -oN nmap/output -T3 10.10.12.237
 Pre-scan script results:
@@ -94,25 +94,25 @@ Service detection performed. Please report any incorrect results at https://nmap
 ```
 
 
-###[Task 1] Connect To Our Network
+### [Task 1] Connect To Our Network
 1. Connect to our Network
 ```
 No answer needed
 ```
 
-###[Task 2] Configure Burp(If you haven't already)
+### [Task 2] Configure Burp(If you haven't already)
 1. Set up Burp
 ```
 No answer needed
 ```
 
-###[Task 3] Walk through the application
+### [Task 3] Walk through the application
 1. Walk through the application and use the functionality available
 ```
 No answer needed
 ```
 
-###[Task 4] Injection
+### [Task 4] Injection
 1. Log in with the administrator's user account using SQL Injection
 ```
 No aswer needed
@@ -131,7 +131,7 @@ Query:
 'OR 1=1 -- -
 ```
 
-###[Task 5] Broken Authentication
+### [Task 5] Broken Authentication
 1. reset Jim's password using the forgotten password mechanism - what was the answer to the secret question?
 ```
 samuel
@@ -165,7 +165,7 @@ admin123
 
 When we logged in as the administrator we can see from the request on burpsuite that there is somesort of base64 token, but not all the string can be decoded by base64, looking at the starting string after decoding it we can see that it is a JWT token. And there's a lot of information from that token... and there is a hashed password there... MD5 hashed password to be exact. then... just dehash that using john, or hashcat, or any other tools you want
 
-###[Task 6] Sensitive Data Exposure
+### [Task 6] Sensitive Data Exposure
 1. Access a confidential document and enter the name of the first file with the extension ".md"
 ```
 acquisitions.md
@@ -173,7 +173,7 @@ acquisitions.md
 
 There is a robots.txt file and there we can see that there is /ftp directory...
 
-###[Task 7] Broken Access Control
+### [Task 7] Broken Access Control
 1. Access the administration section of the store - What is the name of the page?
 ```
 administration
@@ -195,7 +195,7 @@ No answer needed
 
 Just delete it from administration page
 
-###[Task 8] Cross Site Scripting(XSS)
+### [Task 8] Cross Site Scripting(XSS)
 1. Carry out reflected XSS using Tracking Orders
 ```
 No answer needed

@@ -1,7 +1,7 @@
-#SQLi Lab (tryhackme)
-##Database Server -> MySQL
+# SQLi Lab (tryhackme)
+## Database Server -> MySQL
 
-#LEVEL 1 (GET - Error based - Single quotes - String)
+# LEVEL 1 (GET - Error based - Single quotes - String)
 Potential backend query
 ```
 SELECT * FROM <users> WHERE id = '$id' LIMIT 0,1
@@ -22,7 +22,7 @@ Injection
 ```
 ---
 
-#Level 2 (GET - Error based - Integer based)
+# Level 2 (GET - Error based - Integer based)
 Potential backend query
 ```
 SELECT * FROM <users> WHERE id=$id LIMIT 0,1
@@ -45,7 +45,7 @@ Injection
 ```
 ---
 
-#LEVEL 3 (GET - Error based - Single quotes with a twist - String)
+# LEVEL 3 (GET - Error based - Single quotes with a twist - String)
 Potential backend query
 ```
 SELECT * FROM <users> WHERE id=('$id') LIMIT 0,1
@@ -66,7 +66,7 @@ Injection
 ```
 ---
 
-#LEVEL 4 (GET - Error based - Double Quotes - String)
+# LEVEL 4 (GET - Error based - Double Quotes - String)
 Potential backend query
 ```
 SELECT * FROM <users> WHERE id=("$id") LIMIT 0,1
@@ -85,7 +85,7 @@ Injection
 ```
 ---
 
-#LEVEL 5 (GET - Double injection - Single quotes - String)
+# LEVEL 5 (GET - Double injection - Single quotes - String)
 Potential backend query
 ```
 $statement = "SELECT * FROM <users> WHERE id='$id' LIMIT 0,1";
@@ -127,7 +127,7 @@ Injection
 Reference : [Double Query Injection by Sudharshan Kumar](https://medium.com/cybersecurityservices/sql-injection-double-query-injection-sudharshan-kumar-8222baad1a9c)
 ---
 
-#LEVEL 6 (GET - Double injection - Double quotes - String)
+# LEVEL 6 (GET - Double injection - Double quotes - String)
 Potential backend query
 ```
 $statement = 'SELECT * FROM <users> WHERE id="$id" LIMIT 0,1';
@@ -151,7 +151,7 @@ Injection
 ```
 ---
 
-#LEVEL 7
+# LEVEL 7
 Potential backend query
 ```
 SELECT * FROM <users> WHERE id=(('$id')) LIMIT 0,1
