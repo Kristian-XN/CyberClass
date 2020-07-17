@@ -3,7 +3,7 @@
 
     if($_SERVER['REQUEST_METHOD'] === "POST")
     {
-        if($_POST['token'] == $_SESSION['token'])
+        if($_POST['token'] === $_SESSION['token'])
         {
             if($_POST['username'] !== '' && $_POST['email'] !== '' && $_POST['passwd'] !== '')
             {
